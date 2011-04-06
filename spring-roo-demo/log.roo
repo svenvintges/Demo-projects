@@ -1,0 +1,77 @@
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 09:11:18
+download status
+download accept terms of use
+hint
+project --topLevelPackage nl.svenvintges
+hint
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 09:55:57
+hint
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+hint
+entity --class ~.Timer --testAutomatically 
+hint
+field string --fieldName message --notNull 
+hint
+hint controllers
+controller all --package ~.web.TimerController
+hint
+// [failed] gwt setup
+perform tests
+quit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-04-06 10:07:44
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 10:08:56
+perform tests
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 10:13:29
+perform tests
+quit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-04-06 10:30:26
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 10:42:22
+// [failed] gwt setup
+quit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-04-06 10:43:15
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 10:52:02
+hint
+hint fields
+field email template --class ~.Timer
+quit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-04-06 10:52:41
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 10:54:22
+field date --fieldName sven --type java.util.Date --class ~Timer
+hint field
+perform tests
+perform eclipse
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 12:05:39
+hint field
+hint
+hint fields
+hint delete
+perform tests
+quit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-04-06 12:13:16
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 12:15:17
+field number --fieldName demo2 --type double --class ~Timer --notNull
+perform tests
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 14:05:01
+hint wolr
+hint solr
+quit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-04-06 14:12:39
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 14:15:15
+// [failed] controller all --package ~
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 14:16:06
+quit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-04-06 14:16:32
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-04-06 14:16:45
+hint
+// [failed] selenium test --controller ~Timer
+// [failed] selenium test --controller ~TimerController
+;
+help
+// [failed] selenium test --controller ~.TimerController
+// [failed] selenium test --controller ~.web.TimerController.TimerController
+// [failed] selenium test --controller ~.web.TimerController
+controller all --package ~.web
+selenium test --controller ~.web.TimerController
+perform tests
+quit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-04-06 14:22:42

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_nl_svenvintges_Timer" items="${timers}" z="ThoyQtAnRvT4N3ME2MVT/oImBtU=">
+        <table:table data="${timers}" id="l_nl_svenvintges_Timer" path="/timers" z="WFffZiz0YlcvvWD9x3DmjX8P1Us=">
+            <table:column id="c_nl_svenvintges_Timer_message" property="message" z="ntbQ/LPCv41l4Ue8dl69TcjqgjU="/>
+        <table:column id="c_nl_svenvintges_Timer_sven" property="sven" z="W6WlosrPFJI0v0O1vN1qV2UuyVY="/>
+        <table:column id="c_nl_svenvintges_Timer_demo2" property="demo2" z="iInjHNHn+hBvWRQ8quECNLwXSqQ="/>
+        </table:table>
+    </page:list>
+</div>

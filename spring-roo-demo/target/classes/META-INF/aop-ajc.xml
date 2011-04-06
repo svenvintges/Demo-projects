@@ -1,0 +1,12 @@
+<aspectj>
+<aspects>
+<aspect name="nl.svenvintges.web.TimerController.TimerController_Roo_Controller"/>
+<aspect name="nl.svenvintges.web.TimerController_Roo_Controller"/>
+<aspect name="nl.svenvintges.Timer_Roo_JavaBean"/>
+<aspect name="nl.svenvintges.web.TimerController.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="nl.svenvintges.Timer_Roo_Entity"/>
+<aspect name="nl.svenvintges.Timer_Roo_ToString"/>
+<aspect name="nl.svenvintges.Timer_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

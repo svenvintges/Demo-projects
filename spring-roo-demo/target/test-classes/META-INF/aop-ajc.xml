@@ -1,0 +1,9 @@
+<aspectj>
+<aspects>
+<aspect name="nl.svenvintges.TimerIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="nl.svenvintges.TimerIntegrationTest_Roo_Configurable"/>
+<aspect name="nl.svenvintges.TimerDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="nl.svenvintges.TimerDataOnDemand_Roo_Configurable"/>
+</aspects>
+</aspectj>
+
