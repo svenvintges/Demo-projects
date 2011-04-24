@@ -37,8 +37,8 @@ object MyTest
 		case Sum(l,r) => simplify(l) + simplify(r)
 		//case Pow(b,e) => Pow(Const(simplify(b)), Const(simplify(e)))
   		//case Product(l,r) => Product(Const(simplify(l)), Const(simplify(r)))
-		case Const(1) => Const(1)
-		case Const(0) => Const(0)
+		case Const(1) => 1
+		case Const(0) => 0
 	}
 
 	def main (args: Array[String]) {
