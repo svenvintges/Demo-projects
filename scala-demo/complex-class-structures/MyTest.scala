@@ -33,12 +33,16 @@ object MyTest
 
 	// I want to return a tree, because x^2 returns 2x and x^y return y*x^y-1 (if y is natural) 
 	// but we want to perform the operations on al elements of Const(_)
-	def simplify(t: Tree): Int  = t match {
-		case Sum(l,r) => simplify(l) + simplify(r)
-		//case Pow(b,e) => Pow(Const(simplify(b)), Const(simplify(e)))
-  		//case Product(l,r) => Product(Const(simplify(l)), Const(simplify(r)))
-		case Const(1) => 1
-		case Const(0) => 0
+	def simplify(t: Tree): Tree  = t match {
+		case Sum(l,r) if ((l.isInstanceOf[Const]) && (r.isInstanceOf[Const])) => Const(l.asInstanceOf[Const].v + r.asInstanceOf[Const].v)
+		case Sum(l,r) => simplify(Sum(simplify(l),simplify(r))) //add an additional simplify to "eat" up generated consts from the embedded simplifies
+		case Pow(b,e) if (e == 1) => b
+		case Pow(b,e) => Pow(simplify(b), e)
+		case Product(l,r) if ((l.isInstanceOf[Const]) && (r.isInstanceOf[Const])) => Const(l.asInstanceOf[Const].v * r.asInstanceOf[Const].v)
+
+  		case Product(l,r) => Product(simplify(l), simplify(r))
+		case Const(n) => Const(n)
+		case Var(v) => Var(v)
 	}
 
 	def main (args: Array[String]) {
@@ -55,7 +59,7 @@ object MyTest
 	  println("Expression: " + exp2)
 	  println("Evaluated with x=5, y=7: " + eval(exp2, env))
 	  println("Derivative relative to x: \n " + derive(exp2, "x"))
-	  //println("Simplified: " + simplify(derive(exp2, "x")))
+	  println("Simplified: " + simplify(derive(exp2, "x")))
 	  println("Derivative relative to y: \n " + derive(exp2, "y"))
 	  //println("Simplified: " + simplify(derive(exp2, "y")))
 	}
